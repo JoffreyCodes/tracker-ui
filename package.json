@@ -18,7 +18,7 @@
     "watch-server-hmr": "webpack -w --config webpack.serverHMR.js",
     "#dev-all": "Dev mode: watch for server changes and start UI server",
     "dev-all": "rm dist/* && npm run watch-server-hmr & sleep 10 && npm start",
-    "heroku-postbuild": "npm run compile && ln -fs ../node_modules/bootstrap/dist/public/bootstrap"
+    "heroku-postbuild": "npm run compile && ln -fs ../node_modules/bootstrap/dist public/bootstrap"
   },
   "repository": {
     "type": "git",
@@ -44,7 +44,7 @@
     "react-select": "^2.4.4",
     "serialize-javascript": "^1.9.1",
     "url-search-params": "^1.1.0",
-    "whatwg-fetch": "^3.6.2"
+    "source-map-support": "^0.5.16"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
